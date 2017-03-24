@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <title>soundctrl</title>
+        <style>
+
+            input[type=range]::-webkit-slider-runnable-track {
+                width: 300px;
+                height: 50px;
+                background: #ddd;
+                border: none;
+                border-radius: 3px;
+            }
+
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                border: none;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background: goldenrod;
+                margin-top: 0px;
+            }
+
+            input[type=range]:focus {
+                outline: none;
+            }
+
+            input[type=range]:focus::-webkit-slider-runnable-track {
+                background: #ccc;
+            }
+
+            #volume {
+                text-align: center;
+                font-size: 80px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 id="volume">0</h1>
+        <input id="ctrl" type="range" min="0" max="100" value="0" style="width: 100%"/>
+        <script src="soundctrl.js"></script>
+    </body>
+</html>
